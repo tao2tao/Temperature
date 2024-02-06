@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -11,23 +12,31 @@
         <header>
             <h1>Converters</h1>
         </header>
-        <section class="inputs" id="temperaturesection">
-            <h3>Temperature</h3>
-            <br />
-            <div>
-                <!-- <label for="celcius">Celsius:</label> -->
-                <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
+        <div class="container">
+            <div class="section">
+                <h3 class="text-light">Temperature</h3>
+                <section class="inputs" id="temperaturesection">                
+                    <div class="form-group">
+                        <label class="text-light" for="celcius">Celsius:</label>
+                        <input type="number" name="celcius" id="celcius" class="input" placeholder="Celcius">
+                    </div>
+                    <div class="form-group">
+                       <label class="text-light" for="fahrenheit">Fahrenheit:</label>
+                       <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-light" for="kelvin">Kelvin:</label>
+                        <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
+                    </div>
+                </section>
+                </div>
+            <div class="section">
+                <section class="inputs">
+                    <input type="number" name="grams" id="grams" class="input" placeholder="Grams">
+                    <input type="number" name="ounces" id="ounces" class="input" placeholder="Ounces">
+                </section>
             </div>
-            <!-- <label for="fahrenheit">Fahrenheit:</label> -->
-            <input type="number" name="fahrenheit" id="fahrenheit" class="input" placeholder="Fahrenheit">
-            <!-- <label for="kelvin">Kelvin:</label> -->
-            <input type="number" name="kelvin" id="kelvin" class="input" placeholder="Kelvin">
-        </section>
-        <section class="inputs">
-            <input type="number" name="grams" id="grams" class="input" placeholder="Grams">
-
-            <input type="number" name="ounces" id="ounces" class="input" placeholder="Ounces">
-        </section>
+       </div>
     </main>
     <script src="main.js"></script>
 </body>

@@ -20,11 +20,34 @@ h1 {
     margin-bottom: 30px;
 }
 
+.container {
+    display: flex;
+    justify-content: center; /* Adjust as needed */
+    align-items: flex-start; /* Adjust as needed */
+    height: 100vh; /* Adjust as needed */
+  }
+
+.section {
+    display: flex;
+    flex-direction: column; /* or row, adjust as needed */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjust as needed */
+    border: 1px solid #ddd; /* Optional: Add border for visual separation */
+    margin: 10px; /* Optional: Add margin for spacing between sections */
+    background-color: rgb(44, 11, 235);
+    opacity: 0.6;
+    /* background-image: linear-gradient(to bottom, rgb(44, 11, 235), rgb(44, 11, 235));
+    opacity: 0.5; */
+    font-weight: bold;
+    border-radius: 20px;
+}
+
 .inputs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;;
     max-width: 768px;
     margin: 0 auto;
 }

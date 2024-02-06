@@ -3,6 +3,8 @@ const fahrenheitInput = document.getElementById("fahrenheit");
 const kelvinInput = document.getElementById("kelvin");
 const gramInput = document.getElementById("grams")
 const ounceInput = document.getElementById("ounces")
+const feetInput = document.getElementById("feet")
+const meterInput = document.getElementById("meter")
 
 const inputs = document.getElementsByClassName("input");
 
@@ -30,6 +32,12 @@ for (let i = 0; i < inputs.length; i++) {
                 break;
             case "ounces":
                 gramInput.value = (value * 28.3495).toFixed(3);
+                break;
+            case "meter":
+                feetInput.value = (value / 3.821).toFixed(3);
+                break;
+            case "feet":
+                meterInput.value = (value * 3.821).toFixed(3);
                 break;
         }
     });

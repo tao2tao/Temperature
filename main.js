@@ -5,6 +5,8 @@ const gramInput = document.getElementById("grams")
 const ounceInput = document.getElementById("ounces")
 const feetInput = document.getElementById("feet")
 const meterInput = document.getElementById("meter")
+const oZinput = document.getElementById("oZ")
+const mLinput = document.getElementById("mL")
 
 const inputs = document.getElementsByClassName("input");
 
@@ -38,6 +40,12 @@ for (let i = 0; i < inputs.length; i++) {
                 break;
             case "feet":
                 meterInput.value = (value * 3.821).toFixed(3);
+                break;
+            case "mL":
+                oZinput.value = (value/29.574).toFixed(3);
+                break;
+            case "oZ":
+                mLinput.value = (value*29.575).toFixed(3);
                 break;
         }
     });
